@@ -11,22 +11,17 @@
 <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
 
-<link rel="stylesheet" type="text/css" href="css/index.css" />
-
-<title>pgb-helloworld-easy</title>
 
 
+<title>j03-easy-config-pgb-helloworld</title>
 
-<script type="text/javascript" src="phonegap.js"></script>
 
-<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>  
+<!-- keep this since plugins need it -->
+
+
 
 <script type="text/javascript">
-
-
-function isDeviceReady(){
-     document.addEventListener("deviceready", onDeviceReady, false);
-}
 
 function onDeviceReady() {
      document.getElementById('myFeedbackDiv').innerHTML ='Your device is now ready to use';  
@@ -37,7 +32,7 @@ function onDeviceReady() {
 
 </head>
 
-<body onload="isDeviceReady()">
+<body onload="document.addEventListener('deviceready', onDeviceReady, false);">
 
 <h1>pgb-helloworld-easy-index.html </h1>
 
